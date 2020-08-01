@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "rust-lang.rust",
+            "matklad.rust-analyzer",
+            "ms-vscode.cpptools",
+            "be5invis.toml",
+            "serayuzgur.crates"
+        ]
+    }
+}
