@@ -1,5 +1,6 @@
 use chrono::{DateTime, TimeZone, Utc};
 
+#[derive(Debug)]
 struct ScheduleEvent {
     title: String,
     start_time: DateTime<Utc>,
@@ -16,7 +17,14 @@ impl ScheduleEvent {
     }
 }
 
-fn find_schedule_clash(events: &[ScheduleEvent]) {
+/// Checks an array of schedule events for any clashing time slots.
+///
+/// This function prints out any clashes to the commandline.
+///
+/// # Arguments
+///
+/// * `events`  - The array of events to check against.
+fn find_schedule_clashes(events: &[ScheduleEvent]) {
     for (initial_index, initial_event) in events.iter().enumerate() {
         for (comparison_index, comparison_event) in events.iter().enumerate() {
             if initial_index != comparison_index
@@ -52,5 +60,5 @@ fn main() {
         ),
     ];
 
-    find_schedule_clash(&events);
+    find_schedule_clashes(&events);
 }
