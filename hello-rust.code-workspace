@@ -8,6 +8,7 @@
         "recommendations": [
             "rust-lang.rust",
             "matklad.rust-analyzer",
+            "statiolake.vscode-rustfmt",
             "ms-vscode.cpptools",
             "be5invis.toml",
             "serayuzgur.crates"
